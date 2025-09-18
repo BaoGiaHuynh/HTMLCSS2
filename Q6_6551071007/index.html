@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>D&M - Bán buôn bán lẻ đầm bầu thời trang</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+        }
+        /* Header */
+        .header {
+            background: #fff;
+            text-align: center;
+            padding: 10px;
+            border-bottom: 3px solid #ccc;
+        }
+        .header h1 {
+            margin: 0;
+            color: #444;
+        }
+        .nav {
+            background: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Layout */
+        .container {
+            display: flex;
+            width: 90%;
+            margin: 20px auto;
+        }
+        .sidebar {
+            width: 25%;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            color: #d35400;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 5px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .sidebar ul li a:hover {
+            color: #e67e22;
+        }
+
+        .content {
+            width: 75%;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+        }
+
+        /* Product grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product h4 {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0 5px;
+        }
+        .price {
+            color: black;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background: darkorange;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+.sub-banner {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 15px auto;
+    gap: 10px;
+}
+.sub-banner img {
+    width: 49%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>D & M</h1>
+        <p>Bán buôn - Bán lẻ đầm bầu thời trang</p>
+    </div>
+
+    <div class="nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Dịch vụ</a>
+        <a href="#">Liên hệ</a>
+    </div>
+
+     <div class="sub-banner">
+        <img src="banner_trai.jfif" alt="Banner trái">
+        <img src="banner_phai.jfif" alt="Banner phải">
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>DANH MỤC SẢN PHẨM</h3>
+            <ul>
+                <li><a href="#">Áo len</a></li>
+                <li><a href="#">Đầm bầu</a></li>
+                <li><a href="#">Áo sơ mi</a></li>
+                <li><a href="#">Áo khoác</a></li>
+            </ul>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="section-title">SẢN PHẨM NỔI BẬT</div>
+            <div class="products">
+                <div class="product">
+                    <img src="aolenxam.jfif" alt="Áo len xám">
+                    <h4>Áo nỉ cổ tay dài - AT0002</h4>
+                    <p class="price">120.000 ₫</p>
+                    <a href="#" class="btn">Mua hàng</a>
+                </div>
+                <div class="product">
+                    <img src="aolendo.jfif" alt="Áo len đỏ">
+                    <h4>Áo nỉ cổ tay lửng - AT0002</h4>
+                    <p class="price">120.000 ₫</p>
+                    <a href="#" class="btn">Mua hàng</a>
+                </div>
+                <div class="product">
+                    <img src="aolenxanh.jfif" alt="Áo len xanh">
+                    <h4>Áo nỉ cổ lọ tay dài - AT0002</h4>
+                    <p class="price">120.000 ₫</p>
+                    <a href="#" class="btn">Mua hàng</a>
+                </div>
+            </div>
+
+            <div class="section-title">SẢN PHẨM MỚI NHẤT</div>
+            <div class="products">
+                <div class="product">
+                    <img src="aolenxam.jfif" alt="Áo len xám">
+                    <h4>Áo nỉ cổ tay dài - AT0002</h4>
+                    <p class="price">120.000 ₫</p>
+                    <a href="#" class="btn">Mua hàng</a>
+                </div>
+                <div class="product">
+                    <img src="aolendo.jfif" alt="Áo len đỏ">
+                    <h4>Áo nỉ cổ tay lửng - AT0002</h4>
+                    <p class="price">120.000 ₫</p>
+                    <a href="#" class="btn">Mua hàng</a>
+                </div>
+                <div class="product">
+                    <img src="aolenxanh.jfif" alt="Áo len xanh">
+                    <h4>Áo nỉ cổ lọ tay dài - AT0002</h4>
+                    <p class="price">120.000 ₫</p>
+                    <a href="#" class="btn">Mua hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 D&M Fashion - Designed by Web Designer Templates Perfect
+    </div>
+
+</body>
+</html>
